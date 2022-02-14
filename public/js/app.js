@@ -8,12 +8,10 @@ var Points = /** @class */ (function () {
     ;
     Points.prototype.editheadline = function () {
         this.points += 1;
-        console.log(this.points);
         var text = '.';
         for (var i = 0; i < this.points % 3; i++) {
             text += '.';
         }
-        console.log(text);
         this.element.innerHTML = text + 'dick';
     };
     Points.prototype.start = function () {
